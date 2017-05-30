@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="${relativePackage}.${activityClass}" >
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/title"
+        android:textSize="75sp" 
+        android:textStyle="bold"/>
+     <Button
+        android:id="@+id/btn_start"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginTop="25dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start"
+        />
+     <Button
+        android:id="@+id/btn_row"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_start"
+        android:layout_marginTop="10dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/row"
+        />
+     <Button
+        android:id="@+id/btn_GPS"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_row"
+        android:layout_marginTop="10dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/GPS"
+        />
+	 <Button
+        
+        android:id="@+id/btn_qr"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_GPS"
+        android:layout_marginTop="10dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/qr"
+        />
+	 
+	 	  <Button
+        
+        android:id="@+id/btn_controlx"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_qr"
+        android:layout_marginTop="10dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/control"
+        />
+	 
+	  <Button
+        
+        android:id="@+id/btn_exit"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_controlx"
+        android:layout_marginTop="10dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/exit"
+        />
+
+
+</RelativeLayout>
+       
+   </ScrollView>
+
+</RelativeLayout>
+  

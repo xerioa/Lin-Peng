@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/final_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+
+	<EditText
+    android:id="@+id/edit_final"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:maxLength="5"
+    android:backgroundTint="#FFFFFF"
+    android:hint="請輸入大名"
+    android:textSize="60px"
+    />
+    <TextView 
+        android:id="@+id/text_final"
+        android:layout_above="@id/edit_final"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dip"
+        android:textSize="60px"
+        android:text="得分為"
+        />
+    <TextView 
+        android:id="@+id/text_score"
+        android:layout_above="@id/edit_final"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dip"
+        android:textSize="60px"
+        android:text="score"
+        />
+    <Button 
+        android:id="@+id/btn_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_final"
+        android:layout_marginTop="60dip"
+        android:layout_centerHorizontal="true"
+        android:text="送出"
+        android:textSize="40px"
+        
+        />
+    
+</RelativeLayout>
