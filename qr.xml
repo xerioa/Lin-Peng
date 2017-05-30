@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+	android:background="@drawable/back"
+	>
+	<ImageView
+	    android:id="@+id/image_qrcode"
+	    android:layout_centerInParent="true"
+	    android:layout_width="200dip"
+	    android:layout_height="200dip"
+	    android:src="@drawable/q" />
+	 <Button
+        
+	    android:id="@+id/btn_bbaacckk"
+	    android:layout_below="@id/image_qrcode"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="30dip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="返回"    />
+
+
+</RelativeLayout>
