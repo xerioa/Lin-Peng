@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/control_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="${relativePackage}.${activityClass}" >
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="469dp" >
+
+        <TextView
+            android:id="@+id/control_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="選項設定"
+            android:textSize="60dp" />
+
+        <SeekBar
+            android:id="@+id/volume"
+            android:layout_width="330dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/control_title"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="25dip"
+            android:minHeight="5dp"
+            android:minWidth="5dp" />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/volume"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:text="音量"
+            android:textColor="#FFFFFF"
+            android:textSize="50px" />
+		 <Button
+            android:id="@+id/controlbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            
+            android:text="返回"
+            android:textSize="50px" />
+        
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:text="清除排行榜紀錄"
+            android:textSize="50px" />
+         <ImageView
+            android:id="@+id/btn_background"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:layout_marginLeft="40dip"
+            android:layout_below="@id/volume"
+            android:layout_toRightOf="@id/progress"
+            android:layout_marginTop="10dip"
+			android:src="@drawable/see1"
+             />
+		<TextView
+            android:id="@+id/sound_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_delete"
+            android:text="音效"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+        <TextView
+            android:id="@+id/vibrat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sound_name"
+            android:text="震動"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/vibrat_name"
+            android:layout_alignParentBottom="true"
+           
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                 android:layout_marginBottom="105dip"
+                 
+                android:text="有"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/btn_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="50dip"
+                android:text="無"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+		<RadioGroup
+            android:id="@+id/radioGroupsound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sound_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="200dip"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/btn_yess1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="165dip"
+                android:checked="false"
+                android:text="開"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/btn_nos1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_marginLeft="50dip"
+                android:text="關"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+       
+		
+
+    </RelativeLayout>
+
+   </ScrollView>
+
+</RelativeLayout>
